@@ -132,6 +132,21 @@ button {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 25px;
   letter-spacing: -0.03em;
+  color: #f4f4f5;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(48px, 7vw, 78px);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  color: #f4f4f5;
+}
+
+.empty-state h3,
+.expense-item h3 {
+  color: #f4f4f5;
 }
 
 /* ================= FORM ================= */
@@ -357,5 +372,32 @@ select:focus {
   .expense-actions {
     width: 100%;
     justify-content: space-between;
+  }
+}
+@media (max-width: 520px) {
+  body {
+    background: #09090b;
+    color: #f4f4f5;
+  }
+
+  .app {
+    background: transparent;
+  }
+
+  .header h1,
+  .panel-heading h2,
+  .empty-state h3,
+  .expense-item h3 {
+    color: #f4f4f5;
+  }
+
+  input,
+  select {
+    color: #f4f4f5;
+    background: #111114;
+  }
+
+  input::placeholder {
+    color: #66666f;
   }
 }
